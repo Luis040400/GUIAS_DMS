@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GUIA2</string>}
+    <string name="numero1">Número 1: </string>
+    <string name="numero2">Número 2: </string>
+    <string name="enviar">Enviar</string>
+    <string name="resultado">Resultado: </string>
+</resources>

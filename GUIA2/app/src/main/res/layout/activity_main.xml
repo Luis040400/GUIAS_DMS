@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/LblNumero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero1" />
+
+    <EditText
+        android:id="@+id/TxtNumero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/LblNumero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero2" />
+
+    <EditText
+        android:id="@+id/TxtNumero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/BtnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/enviar" />
+
+    <TextView
+        android:id="@+id/LblResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado" />
+
+</LinearLayout>
