@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application - Practica 6 - DSM104</string>
+    <string name="contrasena">¿Olvido su contraseña?</string>
+    <string name="shampoName" translatable="false">Shampoo Monster x 1</string>
+</resources>
