@@ -56,12 +56,20 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             override fun onResponse(call: Call<UsersItem>, response: Response<UsersItem>) {
                 var data = response.body()
                 val user : List<UsersItem> = listOf(data) as List<UsersItem>
-                myAdapter = MyAdapter(baseContext,user)
-                rvMain.adapter = myAdapter
+                if(user[0] != null){
+                    Log.d("ENTRE AL IF",user.isEmpty().toString())
+                    Log.d("USUARIO",user.toString())
+                    myAdapter = MyAdapter(baseContext,user)
+                    rvMain.adapter = myAdapter
+                }else{
+                    Log.d("ENTRE AL else",user.isEmpty().toString())
+                    Toast.makeText(this@MainActivity, "No se encontro!", Toast.LENGTH_SHORT).show()
+                }
+
             }
 
             override fun onFailure(call: Call<UsersItem>, t: Throwable) {
-                TODO("Not yet implemented")
+                Toast.makeText(this@MainActivity, "No se encontro!", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -79,7 +87,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             }
 
             override fun onFailure(call: Call<List<UsersItem>>, t: Throwable) {
-                TODO("Not yet implemented")
+                Toast.makeText(this@MainActivity, "No se encontro!", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -87,6 +95,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     override fun onQueryTextSubmit(query: String): Boolean {
         if(!query.isEmpty()){
             searhUsers(query.lowercase(Locale.getDefault()))
+        }else{
+            getAllData()
         }
         return true
     }
