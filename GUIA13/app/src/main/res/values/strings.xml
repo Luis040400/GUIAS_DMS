@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">multimediaapp</string>
+    <string name="btnplay">Play</string>
+    <string name="btnstop">Stop</string>
+    <string name="mensajevideo">Haga click en el contenedor del video</string>
+    <string name="mensajepermisos">Debe conceder los permisos necesarios</string>
+    <string name="btnVideo">Cargar video</string>
+    <string name="btnPermiso">Conceder permisos</string>
+    <string name="imgenFoto">imagen</string>
+    <string name="botonTomarFoto">Tomar foto</string>
+    <string name="edt_tts">Diga algo</string>
+    <string name="btn_tts1">Escuchar</string>
+    <string name="btn_tts2">Guardar</string>
+</resources>
